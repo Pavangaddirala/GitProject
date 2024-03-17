@@ -39,8 +39,7 @@ table 50106 "Employee Table"
         }
         field(4; "Phone Number"; Text[15])
         {
-            Numeric = true;
-            Access = Internal;
+
             DataClassification = ToBeClassified;
 
         }
@@ -67,7 +66,7 @@ table 50106 "Employee Table"
 
     trigger OnInsert()
     begin
-
+        message('Hello');
     end;
 
     trigger OnModify()
