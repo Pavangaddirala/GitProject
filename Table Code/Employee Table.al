@@ -43,6 +43,12 @@ table 50106 "Employee Table"
             DataClassification = ToBeClassified;
 
         }
+        field(5; "Customer Number"; Text[15])
+        {
+
+            DataClassification = ToBeClassified;
+
+        }
 
     }
 
@@ -66,7 +72,7 @@ table 50106 "Employee Table"
 
     trigger OnInsert()
     begin
-        message('Hello');
+        message(message);
     end;
 
     trigger OnModify()

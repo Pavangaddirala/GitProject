@@ -10,6 +10,7 @@ page 50107 "Pavan Employee Card"
     {
         area(Content)
         {
+
             group(GroupName)
             {
                 field(Id; Rec."Emp ID")
@@ -29,6 +30,14 @@ page 50107 "Pavan Employee Card"
                 }
                 field(Phone; Rec."Phone Number")
                 {
+                    ApplicationArea = All;
+
+                }
+                field(empnumber; Rec."Customer Number")
+                {
+                    //TableRelation = Customer; 
+                    TableRelation = Customer."No." where("No." = filter(>= 30000));
+
                     ApplicationArea = All;
 
                 }
@@ -57,6 +66,7 @@ page 50107 "Pavan Employee Card"
                     Message('Recorded inserted');
 
                 end;
+
             }
         }
     }
@@ -64,3 +74,4 @@ page 50107 "Pavan Employee Card"
     var
         myInt: Integer;
 }
+

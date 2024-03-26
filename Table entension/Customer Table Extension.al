@@ -16,6 +16,40 @@ tableextension 50108 pvncustomertableextension extends Customer
             DataClassification = ToBeClassified;
         }
 
+
+
+
+
+    }
+
+    keys
+    {
+        // Add changes to keys here
+    }
+
+    fieldgroups
+    {
+        // Add changes to field groups here
+    }
+
+    var
+        myInt: Integer;
+}
+
+tableextension 50145 pvnitemextension extends Item
+{
+    fields
+    {
+        // Add changes to table fields here
+
+        field(50145; Newfield; Text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(50146; Newfield1; Text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
     }
 
     keys
